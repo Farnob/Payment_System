@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Elements</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="" method="get">
+        <h1 class="main_heading">Payment Form</h1>
+        <hr />
+        <h3 class="second_heading">Contact Information</h3>
+        <fieldset>
+          <p><b>Name: </b> <input type="text" name="name" required /></p>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend><b>Gender</b></legend>
+          <p>
+            Male <input type="radio" name="gender" id="male" /> <br />
+            Female <input type="radio" name="gender" id="female" />
+          </p>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend><b>Address</b></legend>
+          <p>
+            <b>
+              <textarea
+                name="address"
+                id="address"
+                cols="100"
+                rows="7"
+              ></textarea>
+            </b>
+          </p>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend><b>Email</b></legend>
+          <p><input type="email" name="email" id="email" /></p>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend><b>Pincode</b></legend>
+          <p><input type="number" name="pincode" id="pincode" /></p>
+        </fieldset>
+        <hr />
+        <h2 class="third_heading"><b>Payment Information</b></h2>
+        <br />
+        <fieldset>
+          <legend><b>Card Type</b></legend>
+          <p>
+            <select name="card_type" id="card_type" required>
+              <option value="">--Select a Card Type--</option>
+              <option value="bkash">Bkash</option>
+              <option value="nagad">Nagad</option>
+              <option value="rocket">Rocket</option>
+            </select>
+          </p>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend><b>Online Banking Number</b></legend>
+          <p>
+            <input type="number" name="card_number" id="card_number" required />
+          </p>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend><b>Expiration Date</b></legend>
+          <p><input type="date" name="exp_date" id="exp_date" /></p>
+        </fieldset>
+        <p>
+          <b>Enter Your Pin: </b>
+          <input type="password" name="cvv" id="cvv" required />
+        </p>
+        <button type="submit" class="button"><b>Pay Now</b></button>
+      </form>
+    </div>
+  </body>
+</html>
